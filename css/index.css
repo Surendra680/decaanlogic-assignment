@@ -1,0 +1,200 @@
+body{
+	margin: 0;padding: 0;
+	box-sizing: border-box;
+
+	
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color:  #19334d;
+	height: 64px;
+}
+.menu ul  .active,li:hover{
+	background-color: rgba(25, 52, 189, 0.25);
+}
+nav .logo_name{
+	color: white;
+	font-size: 25px;
+}
+nav span{
+	color: lightblue;
+}
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+	text-align: center;
+}
+nav ul li{
+	list-style: none;
+	
+	padding: 7px;
+	height: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+.image_slider{
+	width:85% ;
+	margin: 0px auto;
+	overflow: hidden;
+	
+}
+.main_wrapper{
+	background-color:#f5f5f0;
+
+}
+main{
+	display: flex;
+	width: 85%;
+	margin: 0px auto;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	height: 200px;
+	
+}
+main img{
+	
+	clip-path: circle(40% at 50% 50%);
+
+	
+}
+
+
+ main .child1{
+	background-color: rgb(100, 100, 216);
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	color: white;
+
+	
+}
+main .child2{
+flex: 1;
+padding-top: 10px;
+}
+main .child3{
+	flex: 2;
+	text-align: left;
+}
+.team_wrapper{
+	
+	height: 200px;
+	text-align: center;
+	background-color:#f5f5f0;
+
+	
+}
+.team_info{
+	width: 85%;
+	margin:60px auto 60px auto;
+	display: flex;
+	height: 100%;
+}
+.team_info .team_images{
+	flex: 3;
+	display: flex;
+	padding-top: 3px;
+}
+.team_info .team_images img{
+	width: 80%;
+	clip-path: circle(36.5% at 50% 50%);
+}
+.logo_team{
+	background-color: rgb(100, 100, 216);
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.footer_wrapper{
+	height: 200px;
+	background-color:#f5f5f0;
+
+}
+footer{
+	width: 85%;
+	margin: 60px auto 0px auto;
+	display: flex;
+	justify-content: space-evenly	;
+	align-items: center;
+	
+}
+.footer_wrapper .footer_logo{
+	background-color:orange;
+	flex: 2;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	color: white;
+	height: 200px;
+	
+	
+}
+.footer_wrapper .footer_icon{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	height: 200px;
+	color: white;
+}
+.footer_icon .icon1{
+	
+	background-color: orange;
+
+	
+	
+}
+.footer_icon .icon2{
+	
+	background-color: black;
+	margin-top: 3px;
+	
+}
+.footer_icon .icon3{
+	margin-top: 3px;
+	
+	background-color: black;
+}
+.ficon{
+	flex: 30%;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+   
+.footer_wrapper .icon_info{
+	flex: 2;
+	height: 200px;
+	background-color: orange;
+	padding-left: 35px;
+	color: white;
+	clip-path: polygon(7% 0, 80% 0%, 100% 0, 100% 100%, 7% 100%, 7% 33%, 0 20%, 7% 11%);
+}
+@media screen and (min-width: 1300px) {
+	.team_info .team_images img{
+		height: 60%;
+	}
+	.footer_wrapper .icon_info{
+		padding-left: 44px;
+	}
+
+}
+
